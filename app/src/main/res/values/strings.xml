@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UnivTest</string>
+    <string name="second_activity_title">Second activity</string>
+    <string name="str_title_activity_result">My Second Activity</string>
+    <string name="str_btn_get_result">Change my name</string>
+    <string name="str_hint_data">Aici este rezultatul transmis</string>
+</resources>
