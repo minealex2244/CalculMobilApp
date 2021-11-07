@@ -64,7 +64,7 @@
         android:id="@+id/buttonGalleryThread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="159dp"
         android:text="Load the gallery"
@@ -72,5 +72,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonActiv2" />
+
+    <Button
+        android:id="@+id/btnGalAsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Async"
+        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonGalleryThread" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

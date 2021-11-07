@@ -57,6 +57,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         btnGal.setOnClickListener(listenerGal);
 
+        // Gallery Async button
+
+        Button btnGalAsync = findViewById(R.id.btnGalAsync);
+
+        View.OnClickListener listenerGalAsync = v -> {
+            Intent i = new Intent(getApplicationContext(), GalleryAsyncActivity.class);
+            startActivity(i);
+        };
+
+        btnGalAsync.setOnClickListener(listenerGalAsync);
+
         // RecyclerView code
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvProducts);
