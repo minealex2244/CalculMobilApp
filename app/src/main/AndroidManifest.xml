@@ -40,6 +40,16 @@
         </activity>
 
         <activity
+            android:name=".GalleryActivity"
+            android:label="Thread Gallery"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.minealex2244.univtest.galleryactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".MainActivity2"
             android:label="Main"
             android:exported="true">

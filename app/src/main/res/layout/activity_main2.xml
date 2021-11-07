@@ -34,16 +34,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_get_result" />
+        app:layout_constraintTop_toTopOf="@+id/btn_get_result"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonActiv2"
         android:layout_width="126dp"
         android:layout_height="80dp"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
         android:onClick="searchWord"
         android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchField" />
 
@@ -53,6 +56,19 @@
         android:layout_height="0dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonActiv2" />
+
+    <Button
+        android:id="@+id/buttonGalleryThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="159dp"
+        android:text="Load the gallery"
+        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonActiv2" />

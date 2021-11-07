@@ -41,10 +41,21 @@ public class MainActivity2 extends AppCompatActivity {
         };
 
         /** Getting a reference to the "GetResult" button from the layout activity_main */
-        Button btn = (Button) findViewById(R.id.btn_get_result);
+        Button btn = findViewById(R.id.btn_get_result);
 
         /** Setting click listener for the button GetResult */
         btn.setOnClickListener(listener);
+
+        // Gallery load button
+
+        Button btnGal = findViewById(R.id.buttonGalleryThread);
+
+        View.OnClickListener listenerGal = v -> {
+            Intent i = new Intent(getApplicationContext(), GalleryActivity.class);
+            startActivity(i);
+        };
+
+        btnGal.setOnClickListener(listenerGal);
 
         // RecyclerView code
         // Lookup the recyclerview in activity layout
