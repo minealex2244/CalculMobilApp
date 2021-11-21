@@ -1,6 +1,9 @@
 package com.minealex2244.univtest;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -9,6 +12,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -82,6 +86,19 @@ public class MainActivity2 extends AppCompatActivity {
         rvContacts.setLayoutManager(new LinearLayoutManager(this));
         // That's all!
 
+        // Fib Service
+
+        Button buttonFib = findViewById(R.id.buttonFib);
+
+        buttonFib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, MyService.class);
+                intent.putExtra("message", "10");
+                startService(intent);
+            }
+        });
+
     }
 
     @Override
@@ -120,5 +137,36 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST2);
                 break;
             }
+    }
+
+    // Fib stuff
+
+    public static final String FILTER_ACTION_KEY = "999";
+    MyReceiver myReceiver;
+    private void setReceiver() {
+        myReceiver = new MyReceiver();
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(FILTER_ACTION_KEY);
+        LocalBroadcastManager.getInstance(this).registerReceiver(myReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onStart() {
+        setReceiver();
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop() {
+        //unregisterReceiver(myReceiver);
+        super.onStop();
+    }
+
+    private class MyReceiver extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String message = intent.getStringExtra("broadcastMessage");
+            Toast.makeText(getApplicationContext(), "The result was: " + message, Toast.LENGTH_SHORT).show();
+        }
     }
 }
