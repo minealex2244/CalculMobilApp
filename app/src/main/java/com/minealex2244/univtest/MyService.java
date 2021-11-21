@@ -16,7 +16,7 @@ public class MyService extends IntentService {
         //This wait can be for downloading, sending a request, decoding a file etc.
         SystemClock.sleep(2000);
         int fibNo = Integer.parseInt(message);
-        String resultMessage = "After 2 seconds of processing...2 " + fib(fibNo);
+        String resultMessage = "After 2 seconds of processing... Here's the Fib term: " + fib(fibNo);
         LocalBroadcastManager.getInstance(getApplicationContext())
                 .sendBroadcast(intent.putExtra("broadcastMessage", resultMessage));
     }
