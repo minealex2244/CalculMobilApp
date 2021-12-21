@@ -72,6 +72,28 @@ public class MainActivity2 extends AppCompatActivity {
 
         btnGalAsync.setOnClickListener(listenerGalAsync);
 
+        // Server button
+
+        Button serverBtn = findViewById(R.id.serverBtn);
+
+        View.OnClickListener listenerServerBtn = v -> {
+            Intent i = new Intent(getApplicationContext(), ServerActivity.class);
+            startActivity(i);
+        };
+
+        serverBtn.setOnClickListener(listenerServerBtn);
+
+        // Client button
+
+        Button clientBtn = findViewById(R.id.clientBtn);
+
+        View.OnClickListener listenerClientBtn = v -> {
+            Intent i = new Intent(getApplicationContext(), ClientActivity.class);
+            startActivity(i);
+        };
+
+        clientBtn.setOnClickListener(listenerClientBtn);
+
         // RecyclerView code
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvProducts);

@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_client.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_proddet.xml" value="0.2" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/activity_server.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/async_gallery.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/gallery_layout.xml" value="0.22146739130434784" />
         <entry key="..\:/Users/POP-LT/Desktop/CM/lab02/app/src/main/res/layout/item_product.xml" value="0.23958333333333334" />
