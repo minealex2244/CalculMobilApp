@@ -116,6 +116,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         rfBtn.setOnClickListener(listenerRfBtn);
 
+        // Firebase button
+
+        Button fbBtn = findViewById(R.id.btnFirebase);
+
+        View.OnClickListener listenerFbBtn = v -> {
+            Intent i = new Intent(getApplicationContext(), FirebaseActivity.class);
+            startActivity(i);
+        };
+
+        fbBtn.setOnClickListener(listenerFbBtn);
+
         // RecyclerView code
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvProducts);

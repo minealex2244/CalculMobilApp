@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "450715647540",
+    "project_id": "calculmobilapp",
+    "storage_bucket": "calculmobilapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450715647540:android:17f1efef19f76281cc1461",
+        "android_client_info": {
+          "package_name": "com.minealex2244.univtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450715647540-p0q3b99agfiegag9f7rdlj68k3a633rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC66DnnSl9Rtv9OKTIm1awVylIMUWZYV2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450715647540-p0q3b99agfiegag9f7rdlj68k3a633rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
