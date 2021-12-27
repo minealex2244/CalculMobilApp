@@ -10,113 +10,104 @@
         android:id="@+id/clientBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="Client"
-        app:layout_constraintBottom_toTopOf="@+id/btnGalAsync"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
-        app:layout_constraintStart_toEndOf="@+id/buttonActiv2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFib" />
 
     <Button
         android:id="@+id/btn_get_result"
         android:layout_width="165dp"
         android:layout_height="58dp"
+        android:layout_marginTop="16dp"
         android:text="@string/str_btn_get_result"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/searchField" />
 
     <EditText
         android:id="@+id/searchField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Search word"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/buttonActiv2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_get_result"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonActiv2"
-        android:layout_width="126dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:onClick="searchWord"
         android:text="Search"
-        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchField" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvProducts"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="391dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonActiv2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonGalleryThread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:text="Load the gallery"
-        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonActiv2" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_get_result" />
 
     <Button
         android:id="@+id/btnGalAsync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="Async"
-        app:layout_constraintBottom_toTopOf="@+id/rvProducts"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonGalleryThread" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_get_result" />
 
     <Button
         android:id="@+id/buttonFib"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Fib"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonGalleryThread"
-        app:layout_constraintEnd_toStartOf="@+id/buttonActiv2"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71000004" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGalleryThread" />
 
     <Button
         android:id="@+id/serverBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:text="Server"
-        app:layout_constraintBottom_toTopOf="@+id/btnGalAsync"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.703"
-        app:layout_constraintStart_toEndOf="@+id/buttonActiv2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonFib" />
+
+    <Button
+        android:id="@+id/trBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Traducere"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -94,6 +94,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         clientBtn.setOnClickListener(listenerClientBtn);
 
+        // Translate button
+
+        Button trBtn = findViewById(R.id.trBtn);
+
+        View.OnClickListener listenerTrBtn = v -> {
+            Intent i = new Intent(getApplicationContext(), TranslateAndImageActivity.class);
+            startActivity(i);
+        };
+
+        trBtn.setOnClickListener(listenerTrBtn);
+
         // RecyclerView code
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvProducts);
