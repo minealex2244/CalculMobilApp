@@ -105,6 +105,17 @@ public class MainActivity2 extends AppCompatActivity {
 
         trBtn.setOnClickListener(listenerTrBtn);
 
+        // Retrofit button
+
+        Button rfBtn = findViewById(R.id.btnRetrofit);
+
+        View.OnClickListener listenerRfBtn = v -> {
+            Intent i = new Intent(getApplicationContext(), RetrofitActivity.class);
+            startActivity(i);
+        };
+
+        rfBtn.setOnClickListener(listenerRfBtn);
+
         // RecyclerView code
         // Lookup the recyclerview in activity layout
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.rvProducts);
@@ -138,7 +149,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        /**
+        /*
          * requestCode : an integer code passed to the called activity set by caller activity
          * resultCode : an integer code returned from the called activity
          * data : an intent containing data set by the called activity
